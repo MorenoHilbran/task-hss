@@ -207,7 +207,7 @@ onMounted(() => { if (isLoggedIn.value) fetchTasks(); });
                         placeholder="Ketik judul task, lalu tekan Enter atau klik Tambah..."
                         :disabled="adding" autocomplete="off" />
                     <button id="tm-add-btn" class="tm-btn-add" @click="addTask"
-                        :disabled="adding || !newTitle.trim()">
+                        :disabled="adding">
                         <span v-if="adding" class="tm-spinner tm-spinner--green"></span>
                         <template v-else>
                             <svg width="15" height="15" viewBox="0 0 20 20" fill="currentColor">
